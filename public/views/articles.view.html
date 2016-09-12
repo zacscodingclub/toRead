@@ -1,1 +1,21 @@
-Article#index
+<h3 class="heading">Articles</h3>
+
+<div ng-controller="ArticlesController">
+  <a href="/">Go Back</a>
+  <div class="row">
+    <div class="articles">
+      <div ng-repeat="article in articles">
+        <div class="col-md-12">
+          <div class="article">
+            <h3>{{ article.title }}</h3>
+            <p>{{ article.body | limitTo: 150 }}</p>
+            <a href="#/articles/{{ article._id }}" class="btn btn-default">View Article</a>
+          </div>
+        </div>
+      </div>
+      <div ng-if="articles == false">
+        <p>No articles yet!</p>
+      </div>
+    </div>
+  </div>
+</div>

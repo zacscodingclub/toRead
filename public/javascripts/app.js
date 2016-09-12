@@ -15,7 +15,7 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'NewArticleController'
     }).
     when('/articles/category/:category_name', {
-      templateUrl: 'view/articles.view.html',
+      templateUrl: 'views/category_articles.view.html',
       controller: 'ArticlesCategoryController'
     }).
     when('/articles/:id', {

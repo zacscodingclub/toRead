@@ -12,19 +12,19 @@ app.config(['$routeProvider', function($routeProvider) {
     }).
     when('/articles/new', {
       templateUrl: 'views/new_article.view.html',
-      controller: 'ArticlesController'
+      controller: 'NewArticleController'
     }).
     when('/articles/category/:category_name', {
       templateUrl: 'view/articles.view.html',
-      controller: 'ArticlesController'
+      controller: 'ArticlesCategoryController'
     }).
     when('/articles/:id', {
       templateUrl: 'views/article.view.html',
-      controller: 'ArticlesController'
+      controller: 'ArticleShowController'
     }).
     when('/articles/edit/:id', {
       templateUrl: 'views/edit_article.view.html',
-      controller: 'ArticlesController'
+      controller: 'EditArticleController'
     }).
     otherwise({ redirectTo: '/categories' })
 }]);

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="toRead">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,11 +44,13 @@
 
     <div class="container">
 
-      <div ng-view></div>
-
+      <div ng-view id="content"></div>
+      <hr>
     </div><!-- /.container -->
 
-
+    <footer class="text-center">
+      <p>&copy; 2016 - <a href="http://zacbaston.com">Zac Baston</a> - <a href="https://github.com/zacscodingclub/toRead">Github</a></p>
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
